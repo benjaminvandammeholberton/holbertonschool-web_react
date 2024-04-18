@@ -18,6 +18,7 @@ module.exports = {
         use: [
           {
             loader: 'image-webpack-loader',
+            options: { type: 'asset/resource' },
           },
         ],
       },
