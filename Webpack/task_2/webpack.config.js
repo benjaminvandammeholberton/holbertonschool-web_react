@@ -15,7 +15,11 @@ module.exports = {
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
+        use: [
+          {
+            loader: 'image-webpack-loader',
+          },
+        ],
       },
     ],
   },
