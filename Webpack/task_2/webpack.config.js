@@ -19,8 +19,7 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: true,
-              type: 'asset/resource',
+              disable: true,
             },
           },
         ],
