@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { SplitChunksPlugin } = require('webpack').optimize;
 
 module.exports = {
   mode: 'development',
@@ -19,8 +18,12 @@ module.exports = {
       title: 'Task 3',
     }),
     new CleanWebpackPlugin(),
-    new SplitChunksPlugin(),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   devtool: 'inline-source-map',
   devServer: {
     port: 8564,
