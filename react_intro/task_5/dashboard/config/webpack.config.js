@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'developpement',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -34,10 +35,8 @@ module.exports = {
       },
       {
         test: /\.(js|jsx)$/,
-        exlude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        exclude: /node_modules/,
+        use: ['babel-loader'],
       },
     ],
   },
