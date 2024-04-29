@@ -104,14 +104,14 @@ Import your new `Login` component within the test, and write two checks:
 - Shallow render the `Login` component to verify it renders without crashing
 - Verify that the components renders 2 `input` tags and 2 `label` tags
 
-Footer.test.js
+#### Footer.test.js
 
 Import your new `Footer` component within the test, and write two checks:
 
 - Shallow render the `Footer` component to verify it renders without crashing
 - Verify that the components at the very least render the text “Copyright”
 
-App.test.js
+#### App.test.js
 
 Modify the `App.test.js` file, and add four checks:
 
