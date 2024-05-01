@@ -25,7 +25,6 @@ class App extends Component {
     const isCtrl = e.ctrlKey;
 
     if (isCtrl && e.key == 'h') {
-      e.preventDefault();
       alert('Logging you out');
       this.props.logOut();
     }
