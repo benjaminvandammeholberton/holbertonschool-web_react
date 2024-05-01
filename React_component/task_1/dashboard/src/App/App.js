@@ -26,15 +26,13 @@ class App extends Component {
     this.handleKey = this.handleKey.bind(this);
   }
 
-  handleKey = (e) => {
-    const isCtrl = e.ctrlKey;
-
-    if (isCtrl && e.key == 'h') {
+  handleKey(e) {
+    if (e.ctrlKey && e.key == 'h') {
       e.preventDefault();
       alert('Logging you out');
       this.props.logOut();
     }
-  };
+  }
 
   componentDidMount() {
     window.addEventListener('keydown', this.handleKey);
