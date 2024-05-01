@@ -29,7 +29,7 @@ class App extends Component {
   handleKey(e) {
     const isCtrl = e.ctrlKey;
 
-    if (e.ctrlKey && e.key == 'h') {
+    if (isCtrl && e.key == 'h') {
       e.preventDefault();
       alert('Logging you out');
       this.props.logOut();
