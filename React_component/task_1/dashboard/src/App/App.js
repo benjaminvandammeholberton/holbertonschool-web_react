@@ -22,9 +22,7 @@ const notificationData = [
 
 class App extends Component {
   handleKey = (e) => {
-    const isCtrl = e.ctrlKey;
-
-    if (isCtrl && e.key == 'h') {
+    if (e.ctrlKey && e.key == 'h') {
       alert('Logging you out');
       this.props.logOut();
     }
