@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Notifications from '../Notifications/Notifications';
 import Header from '../Header/Header';
@@ -20,7 +20,7 @@ const notificationData = [
   { id: 3, type: 'urgent', html: { __html: getLatestNotifications() } },
 ];
 
-class App extends Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleKey = this.handleKey.bind(this);
