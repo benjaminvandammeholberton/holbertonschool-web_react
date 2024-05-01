@@ -21,6 +21,11 @@ const notificationData = [
 ];
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handleKey = this.handleKey.bind(this);
+  }
+
   handleKey = (e) => {
     const isCtrl = e.ctrlKey;
 
