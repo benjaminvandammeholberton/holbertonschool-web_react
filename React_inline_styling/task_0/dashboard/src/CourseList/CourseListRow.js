@@ -5,8 +5,10 @@ const CourseListRow = ({
   textFirstCell,
   textSecondCell = null,
 }) => {
+  const rowHeaderColor = { backgroundColor: '#deb5b545' };
+  const rowColor = { backgroundColor: '#f5f5f5ab' };
   return (
-    <tr>
+    <tr style={isHeader ? rowHeaderColor : rowColor}>
       {isHeader ? (
         textSecondCell === null ? (
           <th colSpan={2}>{textFirstCell}</th>
