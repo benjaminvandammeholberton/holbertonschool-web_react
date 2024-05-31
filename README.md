@@ -5,3 +5,6 @@
 - [React - Component](./React_component/)
 - [React - Inline styling](./React_inline_styling/)
 - [React - State](./react_state/)
+- [React - Redux(action creator & Normalizr)](./0x08_react_redux_action_creator_normalizr/)
+- [React - Redux (reducer & selector)](./react_redux_reducer_selector/)
+- [React - Redux (connectors & providers)](./react_redux_connectors_and_providers/)
